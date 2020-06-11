@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+html, body {
+  overflow-x: hidden;
+}
+
+html, body {
+  background: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, div, a, ul, li, ol, header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  font-weight: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+
+header, nav, section, article, aside, footer {
+  display: block;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

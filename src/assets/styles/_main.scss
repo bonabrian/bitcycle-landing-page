@@ -1,0 +1,24 @@
+$mediaQueries: (
+  mobileMini: 479px,
+  mobile: 767px,
+  tablet: 991px,
+  desktopMini: 1199px
+);
+
+$colors: (
+  typoBlue: #fff
+);
+
+@function color($colorName) {
+  @return map-get($colors, $colorName)
+};
+
+@function mediaFunction($pixel) {
+  @return map-get($mediaQueries, $pixel)
+};
+
+@mixin media($size) {
+  @media screen and (max-width: mediaFunction($size)) {
+    @content;
+  }
+};
